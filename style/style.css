@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f5fc;
+  box-sizing: border-box;
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.cabecalho_menu {
+  display: flex;
+  padding: 40% 40px;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cabecalho_menu_botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecalho_meio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 176px;
+  border: none;
+  border-radius: 800px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.04);
+}
+
+.cabecalho_slider {
+  display: flex;
+  border: none;
+  border-radius: 800px;
+  background: #ffffff;
+  width: 72px;
+  height: 128px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cabecalho-input {
+  opacity: 0%;
+}
+
+.cabecalho-botao {
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cabecalho-input-baixo {
+  opacity: 0%;
+}
+
+.cabecalho-botao-baixo {
+  top: 72px;
+  left: 16px;
+  position: absolute;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*.cabecalho-input-baixo:checked ~ .cabecalho_slider {
+  background: #0a3871;
+}*/
+
+.principal {
+  display: flex;
+  gap: 80px;
+  width: 100%;
+}
+
+.principal__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 669px;
+  margin-top: 16.41%;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.principal__conteudo__texto {
+  max-width: 100%;
+  /*height: 60px;*/
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  line-height: 48px;
+  font-family: "Inter";
+  font-size: 32px;
+  color: #0a3871;
+  background-color: #f3f5fc;
+  font-weight: 400;
+  position: relative;
+}
+
+.principal__conteudo__texto::placeholder {
+  font-size: 32px;
+  font-family: "Inter";
+  color: #0a3871;
+  font-weight: 400;
+  align-items: first baseline;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.principal__conteudo_botoes_tlink {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 67px;
+  gap: 16px;
+  margin-bottom: 15%;
+}
+
+.principal__conteudo_botoes__link {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #495057;
+  display: flex;
+  gap: 8px;
+}
+
+.principal__conteudo__botoes_botao {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.principal__conteudo__botoes_botaoazul {
+  width: 328px;
+  height: 67px;
+  border: none;
+  border-radius: 24px;
+  background-color: #0a3871;
+  color: #f3f5fc;
+  font-family: "Inter";
+  cursor: pointer;
+}
+
+.principal__conteudo__botoes_botaoazul:active {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 2px #0a3871 solid;
+}
+
+.principal__conteudo__botoes_botaocinza {
+  width: 328px;
+  height: 67px;
+  border: 2px #0a3871 solid;
+  border-radius: 24px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  font-family: "Inter";
+  cursor: pointer;
+}
+
+.principal__conteudo__botoes_botaocinza:active {
+  background-color: #0a3871;
+  color: #d8dfe8;
+  border: 0%;
+}
+
+.principal_secundario {
+  display: flex;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  width: 35%;
+  height: 93%;
+  flex-shrink: 0;
+  margin-top: 4%;
+  padding: auto;
+  flex-direction: column;
+}
+
+.principal_secundario_imagem_textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40%;
+  gap: 32px;
+}
+.principal_secundario_imagem_textos_textos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.principal_secundario_imagem_textos_h3 {
+  color: #343a40;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 28.8px */
+  align-self: stretch;
+  white-space: nowrap;
+}
+
+.principal_secundario_imagem_textos_p {
+  color: #495057;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}

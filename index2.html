@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="cabecalho_menu">
+        <img
+          class="cabecalho__imagem"
+          src="./assets/Frame 6.png"
+          alt="imagem de logo da alura"
+        />
+
+        <div class="cabecalho_menu_botao">
+          <div class="cabecalho_meio">
+            <div class="cabecalho_slider">
+              <label>
+                <input
+                  class="cabecalho-input"
+                  type="checkbox"
+                  onclick="mudarImagem(this, 'decodificador', 'icondec1', 'icondec2')"
+                  checked
+                />
+                <div id="botao1" class="cabecalho-botao">
+                  <img
+                    id="decodificador"
+                    class="cabecalho-botao-imagem"
+                    src="assets/decodificador_on.png"
+                    alt=""
+                  />
+                </div>
+              </label>
+
+              <label>
+                <input
+                  class="cabecalho-input-baixo"
+                  type="checkbox"
+                  onclick="mudarImagem(this, 'jogoDaForca', 'iconfoc1', 'iconfoc2')"
+                />
+                <div id="botao2" class="cabecalho-botao-baixo">
+                  <img
+                    id="jogoDaForca"
+                    class="cabecalho-botao-imagem"
+                    src="assets/jogodaforca_off.png"
+                    alt=""
+                  />
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="cabecalho_menu_botao">
+          <div class="cabecalho_meio">
+            <div class="cabecalho_slider">
+              <label>
+                <input
+                  class="cabecalho-input"
+                  type="checkbox"
+                  onclick="mudarImagem(this, 'pt-br', 'iconpt1', 'iconpt2')"
+                  checked
+                />
+                <div class="cabecalho-botao">
+                  <img
+                    id="pt-br"
+                    class="cabecalho-botao-imagem"
+                    src="assets/pt_on.png"
+                    alt=""
+                  />
+                </div>
+              </label>
+
+              <label>
+                <input
+                  class="cabecalho-input-baixo"
+                  type="checkbox"
+                  onclick="mudarImagem(this, 'esp-esp', 'iconesp1', 'iconesp2')"
+                />
+                <div class="cabecalho-botao-baixo">
+                  <img
+                    id="esp-esp"
+                    class="cabecalho-botao-imagem"
+                    src="assets/esp_off.png"
+                    alt=""
+                  />
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <section class="principal__conteudo">
+        <textarea
+          class="principal__conteudo__texto"
+          name=""
+          id="texto"
+          placeholder="Digite seu texto"
+          rows="2"
+          cols="30"
+        ></textarea>
+
+        <div class="principal__conteudo_botoes_tlink">
+          <p class="principal__conteudo_botoes__link" href="">
+            <img src="./assets/bi_exclamation-circle-fill.jpg" alt="" />Apenas
+            letras minúsculas e sem acento.
+          </p>
+
+          <div class="principal__conteudo__botoes_botao">
+            <button
+              onclick="criptografar()"
+              class="principal__conteudo__botoes_botaoazul"
+            >
+              Criptografar
+            </button>
+
+            <button
+              onclick="descriptografar()"
+              class="principal__conteudo__botoes_botaocinza"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="principal_secundario" class="principal_secundario">
+        <div id="imagem_textos" class="principal_secundario_imagem_textos">
+          <img
+            class="principal_secundario_imagem"
+            src="./assets/High quality products 1 1.jpg"
+            alt=""
+          />
+          <div class="principal_secundario_imagem_textos_textos">
+            <h3 class="principal_secundario_imagem_textos_h3">
+              Nenhuma mensagem encontrada
+            </h3>
+            <p class="principal_secundario_imagem_textos_p">
+              Digite um texto que você queira criptografar ou descriptografar
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
