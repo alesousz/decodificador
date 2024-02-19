@@ -18,16 +18,11 @@ function mudarImagem(elemento, imagemID, icon1, icon2) {
   }
 }
 
+autosize(document.getElementById("texto"));
+
 let paragrafo = null;
 let botao = null;
 let div = null;
-
-var textarea = document.getElementById("texto");
-
-textarea.oninput = function () {
-  this.style.height = "";
-  this.style.height = this.scrollHeight + "px";
-};
 
 function criptografar() {
   let texto = document.getElementById("texto").value;
@@ -48,8 +43,12 @@ function criptografar() {
     div = document.createElement("div");
     div.style.display = "flex";
     div.style.flexDirection = "column";
-    div.style.padding = "32px";
+    div.style.padding = "10%";
+    div.style.alignItems = "flex-start";
     div.style.gap = "32px";
+    div.style.width = "32%";
+    div.style.height = "72%";
+    div.style.position = "relative";
     principal_secundario.appendChild(div);
   }
 
@@ -68,6 +67,8 @@ function criptografar() {
   if (!botao) {
     botao = document.createElement("button");
     botao.innerText = "Copiar";
+    botao.style.top = "90%";
+    botao.style.left = "11%";
     botao.style.width = "328px";
     botao.style.height = "67px";
     botao.style.border = "2px #0a3871 solid";
@@ -76,12 +77,13 @@ function criptografar() {
     botao.style.color = "#0a3871";
     botao.style.fontFamily = "Inter";
     botao.style.cursor = "pointer";
+    botao.style.position = "absolute";
     principal_secundario.appendChild(botao);
   }
 
+  principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
   div.appendChild(paragrafo);
-  div.appendChild(botao);
 }
 
 function descriptografar() {
@@ -103,11 +105,12 @@ function descriptografar() {
     div = document.createElement("div");
     div.style.display = "flex";
     div.style.flexDirection = "column";
-    div.style.alignItems = "center";
-    div.style.padding = "30%";
+    div.style.padding = "10%";
+    div.style.alignItems = "flex-start";
     div.style.gap = "32px";
     div.style.width = "32%";
     div.style.height = "72%";
+    div.style.position = "relative";
     principal_secundario.appendChild(div);
   }
 
@@ -126,6 +129,8 @@ function descriptografar() {
   if (!botao) {
     botao = document.createElement("button");
     botao.innerText = "Copiar";
+    botao.style.top = "90%";
+    botao.style.left = "11%";
     botao.style.width = "328px";
     botao.style.height = "67px";
     botao.style.border = "2px #0a3871 solid";
@@ -134,10 +139,11 @@ function descriptografar() {
     botao.style.color = "#0a3871";
     botao.style.fontFamily = "Inter";
     botao.style.cursor = "pointer";
+    botao.style.position = "absolute";
     principal_secundario.appendChild(botao);
   }
 
+  principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
   div.appendChild(paragrafo);
-  div.appendChild(botao);
 }

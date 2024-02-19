@@ -118,9 +118,16 @@ body {
   padding: 2%;
 }
 
+.principal_conteudo_textarea {
+  display: flex;
+  max-height: 400px;
+  overflow: visible;
+}
+
 .principal__conteudo__texto {
-  max-width: 100%;
-  /*height: 60px;*/
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
   box-sizing: border-box;
   resize: none;
   border: none;
@@ -131,7 +138,6 @@ body {
   color: #0a3871;
   background-color: #f3f5fc;
   font-weight: 400;
-  position: relative;
 }
 
 .principal__conteudo__texto::placeholder {
@@ -212,6 +218,7 @@ body {
   margin-top: 4%;
   padding: auto;
   flex-direction: column;
+  position: relative;
 }
 
 .principal_secundario_imagem_textos {
