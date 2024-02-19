@@ -34,7 +34,9 @@ function criptografar() {
     .replace(/i/g, "imes")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
+
   console.log(criptografia);
+
   if (imagem_textos) {
     imagem_textos.remove();
   }
@@ -46,9 +48,12 @@ function criptografar() {
     div.style.padding = "10%";
     div.style.alignItems = "flex-start";
     div.style.gap = "32px";
-    div.style.width = "32%";
-    div.style.height = "72%";
+    div.style.width = "80%";
+    div.style.height = "80%";
     div.style.position = "relative";
+    div.style.overflowWrap = "break-word";
+    div.style.wordBreak = "break-all";
+    div.style.overflow = "auto";
     principal_secundario.appendChild(div);
   }
 
@@ -59,7 +64,8 @@ function criptografar() {
     paragrafo.style.fontFamily = "Inter";
     paragrafo.style.fontWeight = "400";
     paragrafo.style.textShadow = "0px 2px 2px rgba(0, 0, 0, 0.25)";
-    principal_secundario.appendChild(paragrafo);
+    paragrafo.id = "paragrafo";
+    div.appendChild(paragrafo);
   }
 
   paragrafo.innerText = criptografia;
@@ -80,6 +86,19 @@ function criptografar() {
     botao.style.position = "absolute";
     principal_secundario.appendChild(botao);
   }
+
+  botao.addEventListener("click", function () {
+    var textoParaCopiar = document.getElementById("paragrafo").textContent;
+
+    var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = textoParaCopiar;
+    document.body.appendChild(tempTextArea);
+
+    tempTextArea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(tempTextArea);
+  });
 
   principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
@@ -108,9 +127,12 @@ function descriptografar() {
     div.style.padding = "10%";
     div.style.alignItems = "flex-start";
     div.style.gap = "32px";
-    div.style.width = "32%";
-    div.style.height = "72%";
+    div.style.width = "80%";
+    div.style.height = "80%";
     div.style.position = "relative";
+    div.style.overflowWrap = "break-word";
+    div.style.wordBreak = "break-all";
+    div.style.overflow = "auto";
     principal_secundario.appendChild(div);
   }
 
@@ -121,7 +143,8 @@ function descriptografar() {
     paragrafo.style.fontFamily = "Inter";
     paragrafo.style.fontWeight = "400";
     paragrafo.style.textShadow = "0px 2px 2px rgba(0, 0, 0, 0.25)";
-    principal_secundario.appendChild(paragrafo);
+    paragrafo.id = "paragrafo";
+    div.appendChild(paragrafo);
   }
 
   paragrafo.innerText = descriptografia;
@@ -142,6 +165,19 @@ function descriptografar() {
     botao.style.position = "absolute";
     principal_secundario.appendChild(botao);
   }
+
+  botao.addEventListener("click", function () {
+    var textoParaCopiar = document.getElementById("paragrafo").textContent;
+
+    var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = textoParaCopiar;
+    document.body.appendChild(tempTextArea);
+
+    tempTextArea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(tempTextArea);
+  });
 
   principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
