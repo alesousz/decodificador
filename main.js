@@ -43,6 +43,7 @@ function criptografar() {
 
   if (!div) {
     div = document.createElement("div");
+    div.className = "div_js";
     div.style.display = "flex";
     div.style.flexDirection = "column";
     div.style.padding = "10%";
@@ -54,17 +55,30 @@ function criptografar() {
     div.style.overflowWrap = "break-word";
     div.style.wordBreak = "break-all";
     div.style.overflow = "auto";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      div.style.padding = "1%";
+      div.style.flexGrow = "1";
+      div.style.width = "100%";
+      div.style.height = "100%";
+    }
     principal_secundario.appendChild(div);
   }
 
   if (!paragrafo) {
     paragrafo = document.createElement("p");
+    paragrafo.className = "paragrafo";
     paragrafo.style.color = "#495057"; // Altera a cor do texto para vermelho
     paragrafo.style.fontSize = "24px"; // Altera o tamanho da fonte para 20px
     paragrafo.style.fontFamily = "Inter";
     paragrafo.style.fontWeight = "400";
     paragrafo.style.textShadow = "0px 2px 2px rgba(0, 0, 0, 0.25)";
     paragrafo.id = "paragrafo";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    if (mediaQuery.matches) {
+      paragrafo.style.flexGrow = "1";
+    }
     div.appendChild(paragrafo);
   }
 
@@ -72,6 +86,7 @@ function criptografar() {
 
   if (!botao) {
     botao = document.createElement("button");
+    botao.className = "botao__copiar";
     botao.innerText = "Copiar";
     botao.style.top = "90%";
     botao.style.left = "11%";
@@ -84,6 +99,12 @@ function criptografar() {
     botao.style.fontFamily = "Inter";
     botao.style.cursor = "pointer";
     botao.style.position = "absolute";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      botao.style.left = "5%";
+      botao.style.width = "90%";
+      botao.style.position = "relative";
+    }
     principal_secundario.appendChild(botao);
   }
 
@@ -100,8 +121,8 @@ function criptografar() {
     document.body.removeChild(tempTextArea);
   });
 
-  principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
+  principal_secundario.appendChild(botao);
   div.appendChild(paragrafo);
 }
 
@@ -122,6 +143,7 @@ function descriptografar() {
 
   if (!div) {
     div = document.createElement("div");
+    div.className = "div_js";
     div.style.display = "flex";
     div.style.flexDirection = "column";
     div.style.padding = "10%";
@@ -133,17 +155,30 @@ function descriptografar() {
     div.style.overflowWrap = "break-word";
     div.style.wordBreak = "break-all";
     div.style.overflow = "auto";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      div.style.padding = "1%";
+      div.style.flexGrow = "1";
+      div.style.width = "100%";
+      div.style.height = "100%";
+    }
     principal_secundario.appendChild(div);
   }
 
   if (!paragrafo) {
     paragrafo = document.createElement("p");
+    paragrafo.className = "paragrafo";
     paragrafo.style.color = "#495057"; // Altera a cor do texto para vermelho
     paragrafo.style.fontSize = "24px"; // Altera o tamanho da fonte para 20px
     paragrafo.style.fontFamily = "Inter";
     paragrafo.style.fontWeight = "400";
     paragrafo.style.textShadow = "0px 2px 2px rgba(0, 0, 0, 0.25)";
     paragrafo.id = "paragrafo";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    if (mediaQuery.matches) {
+      paragrafo.style.flexGrow = "1";
+    }
     div.appendChild(paragrafo);
   }
 
@@ -151,6 +186,7 @@ function descriptografar() {
 
   if (!botao) {
     botao = document.createElement("button");
+    botao.className = "botao__copiar";
     botao.innerText = "Copiar";
     botao.style.top = "90%";
     botao.style.left = "11%";
@@ -163,6 +199,12 @@ function descriptografar() {
     botao.style.fontFamily = "Inter";
     botao.style.cursor = "pointer";
     botao.style.position = "absolute";
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      botao.style.left = "5%";
+      botao.style.width = "90%";
+      botao.style.position = "relative";
+    }
     principal_secundario.appendChild(botao);
   }
 
@@ -179,7 +221,7 @@ function descriptografar() {
     document.body.removeChild(tempTextArea);
   });
 
-  principal_secundario.appendChild(botao);
   principal_secundario.appendChild(div);
+  principal_secundario.appendChild(botao);
   div.appendChild(paragrafo);
 }

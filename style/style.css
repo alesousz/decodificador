@@ -99,10 +99,6 @@ body {
   cursor: pointer;
 }
 
-/*.cabecalho-input-baixo:checked ~ .cabecalho_slider {
-  background: #0a3871;
-}*/
-
 .principal {
   display: flex;
   gap: 80px;
@@ -254,4 +250,129 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #f3f5fc;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cabecalho {
+    display: flex;
+    gap: 40px;
+  }
+
+  .cabecalho_menu {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px 0px 0px;
+    gap: 40px;
+  }
+
+  .cabecalho__imagem {
+    height: 50%;
+  }
+
+  .cabecalho_menu_gap {
+    display: flex;
+    gap: 230px;
+    align-items: center;
+  }
+
+  .cabecalho_menu_botao {
+    display: flex;
+    gap: 264px;
+  }
+
+  .cabecalho_meio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 120px;
+    border: none;
+    border-radius: 800px;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.04);
+  }
+
+  .cabecalho_slider {
+    display: flex;
+    border: none;
+    border-radius: 800px;
+    background: #ffffff;
+    width: 128px;
+    height: 72px;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cabecalho-botao-baixo {
+    top: 16px;
+    left: 72px;
+    position: absolute;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .principal__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+    margin-top: 16.41%;
+    box-sizing: border-box;
+    padding: 0% 6%;
+  }
+
+  .principal_secundario {
+    display: flex;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 93%;
+    height: 10%;
+    margin-top: auto;
+    margin-bottom: 4%;
+    padding: 3% 6%;
+    flex-direction: column;
+    position: relative;
+    gap: 32px;
+  }
+
+  .principal_secundario_imagem_textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 32px;
+  }
+
+  .principal_secundario_imagem {
+    display: none;
+  }
 }
