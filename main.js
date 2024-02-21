@@ -162,14 +162,21 @@ function descriptografar() {
       div.style.width = "100%";
       div.style.height = "100%";
     }
+    const mediaQueryy = window.matchMedia("(max-width: 768px)");
+    if (mediaQueryy.matches) {
+      div.style.padding = "1%";
+      div.style.flexGrow = "1";
+      div.style.width = "100%";
+      div.style.height = "100%";
+    }
     principal_secundario.appendChild(div);
   }
 
   if (!paragrafo) {
     paragrafo = document.createElement("p");
     paragrafo.className = "paragrafo";
-    paragrafo.style.color = "#495057"; // Altera a cor do texto para vermelho
-    paragrafo.style.fontSize = "24px"; // Altera o tamanho da fonte para 20px
+    paragrafo.style.color = "#495057";
+    paragrafo.style.fontSize = "24px";
     paragrafo.style.fontFamily = "Inter";
     paragrafo.style.fontWeight = "400";
     paragrafo.style.textShadow = "0px 2px 2px rgba(0, 0, 0, 0.25)";
