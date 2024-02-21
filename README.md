@@ -28,7 +28,7 @@ Além de Aprofundar o uso de JavaScript para adicionar funcionalidades ao sistem
 
 # 📁 Acesso ao projeto
 
-Você pode <a href="">acessar o código fonte do projeto inicial</a> ou <a href="">você pode baixar o código-fonte do projeto pelo GitHub e executá-lo localmente no seu navegador.</a>
+Você pode <a href="https://alesousz.github.io/decodificador/">acessar o código fonte do projeto inicial</a> ou <a href="">você pode baixar o código-fonte do projeto pelo GitHub e executá-lo localmente no seu navegador.</a>
 
 **Divertir-se com o site!**
 <br><br>
