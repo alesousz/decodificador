@@ -18,7 +18,8 @@ Além de Aprofundar o uso de JavaScript para adicionar funcionalidades ao sistem
 - `Funcionalidade 1`: Criptografa mensagens usando um algoritmo
 - `Funcionalidade 2`: Descriptografa mensagens criptografadas
 - `Funcionalidade 3`: Possibilidade de copiar a mensagem criptografada ou descriptografada
-- `Funcionalidade 4`: Permite a  leitura por voz
+- `Funcionalidade 4`: Permite a  leitura por voz (em desenvolvimento)
+- `Funcionalidade 5`: Permite o  Seletor de idioma (em desenvolvimento)
 
 <br><br>
 
