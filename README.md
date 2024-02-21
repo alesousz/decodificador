@@ -23,6 +23,8 @@ Além de Aprofundar o uso de JavaScript para adicionar funcionalidades ao sistem
 <br><br>
 
   ![Decodificador](https://github.com/alesousz/desafio-cod/blob/main/assets/principal%201.jpeg)
+  <br><br>
+  ![Decodificador](https://github.com/alesousz/decodificador-de-texto/blob/main/assets/principal%202.jpeg)
 
 # 📁 Acesso ao projeto
 
