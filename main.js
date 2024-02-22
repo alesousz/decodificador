@@ -90,7 +90,7 @@ function criptografar() {
     botao.innerText = "Copiar";
     botao.style.top = "90%";
     botao.style.left = "11%";
-    botao.style.width = "328px";
+    botao.style.width = "80%";
     botao.style.height = "67px";
     botao.style.border = "2px #0a3871 solid";
     botao.style.borderRadius = "24px";
@@ -197,7 +197,7 @@ function descriptografar() {
     botao.innerText = "Copiar";
     botao.style.top = "90%";
     botao.style.left = "11%";
-    botao.style.width = "328px";
+    botao.style.width = "80%";
     botao.style.height = "67px";
     botao.style.border = "2px #0a3871 solid";
     botao.style.borderRadius = "24px";
