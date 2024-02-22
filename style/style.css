@@ -428,6 +428,7 @@ body {
     align-items: first baseline;
     gap: 64px;
     padding: 2%;
+    width: 100%;
   }
   .principal__conteudo {
     margin: 0%;
@@ -440,6 +441,7 @@ body {
 
   .principal__conteudo__botoes_botao {
     flex-direction: column;
+    width: 70%;
   }
 
   .principal_secundario {
@@ -471,6 +473,10 @@ body {
   }
   .principal_secundario_imagem_textos_h3 {
     white-space: normal;
+  }
+
+  button {
+    width: 100%;
   }
 }
 
