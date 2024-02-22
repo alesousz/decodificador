@@ -427,8 +427,6 @@ body {
     flex-direction: column;
     align-items: first baseline;
     gap: 64px;
-    padding: 2%;
-    width: 100%;
   }
   .principal__conteudo {
     margin: 0%;
@@ -441,7 +439,7 @@ body {
 
   .principal__conteudo__botoes_botao {
     flex-direction: column;
-    width: 70%;
+    width: 50%;
   }
 
   .principal_secundario {
