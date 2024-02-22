@@ -456,7 +456,7 @@ body {
     word-wrap: break-word;
     width: 100%;
     height: 100%;
-    gap: 0;
+    gap: 0; /*teste*/
   }
 
   .principal_secundario_imagem_textos_textos {
@@ -472,4 +472,8 @@ body {
   .principal_secundario_imagem_textos_h3 {
     white-space: normal;
   }
+}
+
+textarea:focus {
+  outline: none;
 }
