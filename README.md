@@ -18,7 +18,8 @@ Além de Aprofundar o uso de JavaScript para adicionar funcionalidades ao sistem
 - `Funcionalidade 1`: Criptografa mensagens usando um algoritmo
 - `Funcionalidade 2`: Descriptografa mensagens criptografadas
 - `Funcionalidade 3`: Possibilidade de copiar a mensagem criptografada ou descriptografada
-- `Funcionalidade 4`: Permite a  leitura por voz
+- `Funcionalidade 4`: Permite a  leitura por voz (em desenvolvimento)
+- `Funcionalidade 5`: Permite o  Seletor de idioma (em desenvolvimento)
 
 <br><br>
 
@@ -28,7 +29,7 @@ Além de Aprofundar o uso de JavaScript para adicionar funcionalidades ao sistem
 
 # 📁 Acesso ao projeto
 
-Você pode <a href="">acessar o código fonte do projeto inicial</a> ou <a href="">você pode baixar o código-fonte do projeto pelo GitHub e executá-lo localmente no seu navegador.</a>
+Você pode <a href="https://alesousz.github.io/decodificador/">acessar o código fonte do projeto inicial</a> ou <a href="">você pode baixar o código-fonte do projeto pelo GitHub e executá-lo localmente no seu navegador.</a>
 
 **Divertir-se com o site!**
 <br><br>
